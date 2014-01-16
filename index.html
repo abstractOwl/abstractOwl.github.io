@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<main>
+  {% for post in paginator.posts %}
+    <article>
+      <h1>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h1>
+
+      <h3 class="date">Posted on {{ post.date | date_to_string }}</h3>
+
+      {{ post.content }}
+    </article>
+  {% endfor %}
+</main>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="older" href="/page{{paginator.next_page}}">Older</a>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="newer" href="/">Newer</a>
+    {% else %}
+      <a class="newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% endif %}
+</div>
