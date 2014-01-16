@@ -45,11 +45,11 @@ h4, h5, h6 {
 p { margin: 1em 0; }
 
 a, a:visited {
-  color: #303030;
+  color: #08C;
   text-decoration: none;
 }
 a:hover {
-  color: #08C;
+  color: #303030;
   text-decoration: underline;
 }
 
@@ -156,9 +156,10 @@ footer {
 
 /* standard */
 article {
-  margin: 3rem 0;
+  margin: 6rem 0;
 }
-article h1 a, article h1 a:hover {
+article h1 a, article h1 a:visited {
+  color: #303030;
   font-weight: 400;
 }
 article h1 a:hover {

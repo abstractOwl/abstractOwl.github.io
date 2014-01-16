@@ -1,5 +1,5 @@
 name:     abstractOwl
 tagline:  '&lt;snip, snip, snip&gt;'
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 paginate: 5

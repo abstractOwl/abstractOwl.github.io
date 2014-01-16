@@ -15,6 +15,7 @@ C++".
 
 
 In **C**:
+
 > `void foo()` means "a function `foo` taking an unspecified number of
 > arguments of unspecified type"
 >
@@ -22,6 +23,7 @@ In **C**:
 
 
 In **C++**:
+
 > `void foo()` means "a function `foo` taking no arguments"
 >
 > `void foo(void)` means "a function `foo` taking no arguments"
