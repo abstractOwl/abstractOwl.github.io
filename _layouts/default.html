@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>
+            {% if page.title %}{{ page.title }} | {% endif %}{{site.name}}
+        </title>
         <meta name="viewport" content="width=device-width">
 
         <link rel="icon" href="/favicon.ico">
@@ -28,12 +30,17 @@
                 <em>{{ site.tagline }}</em>
                 <a class="extra" href="https://github.com/abstractOwl">code</a>
                 <a class="extra" href="https://twitter.com/mochapowered">twtr</a>
+                <a class="extra" href="/atom.xml">atom</a>
             </div>
 
             <div class="container content">
               {{ content }}
             </div>
         </div>
+            <footer>
+                Copyright &copy; 2014 <a href="http://luminously.net">AbstractOwl</a>.
+                Hosted on <a href="https://github.com">GitHub</a>.
+            </footer>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
