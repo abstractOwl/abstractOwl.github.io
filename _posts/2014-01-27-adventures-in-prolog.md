@@ -10,6 +10,8 @@ understand the logic programming language
 class.
 
 
+<br />
+
 ## What is Prolog?
 
 **Prolog** is a declarative programming language. It operates by performing
@@ -63,6 +65,7 @@ returns:
 To programmers more familiar with the imperative style, Prolog presents a
 vastly different perspective.
 
+<br />
 
 ## More Resources
 
