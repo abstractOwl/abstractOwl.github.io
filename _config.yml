@@ -3,7 +3,8 @@ tagline:  '&lt;snip, snip, snip&gt;'
 markdown: kramdown
 pygments: true
 paginate: 5
-url:      http://abstractOwl.github.io
+url:      http://abstractOwl.github.io/
 
 author:
-  name: 'AbstractOwl'
+  name:   'AbstractOwl'
+  email:  ''
