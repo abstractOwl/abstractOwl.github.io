@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "`void` keyword as function parameter"
+title:      "Adventures in Prolog"
 ---
 
 Over the past couple days, I've been banging my head against the wall, trying to
