@@ -10,7 +10,7 @@ understand the logic programming language
 class.
 
 
-# What is Prolog?
+## What is Prolog?
 
 **Prolog** is a declarative programming language. It operates by performing
 queries against given *facts* and *relations*, somewhat similar to database
@@ -64,15 +64,15 @@ To programmers more familiar with the imperative style, Prolog presents a
 vastly different perspective.
 
 
-# More Resources
+## More Resources
 
 Some resources I found useful for learning Prolog:
 
-    * [Learn Prolog Now!](http://learnprolognow.org/) -- Great tutorial for
-          getting started.
-    * [SWI-Prolog Manual](http://www.swi-prolog.org/pldoc/doc_for?object=manual)
-          -- SWI-Prolog manual pages provide a quick reference for looking up
-          functions and parameters.
-    * [StackOverflow](http://www.stackoverflow.com) -- As with anything else
-          programming related, StackOverflow is here to help.
+* [Learn Prolog Now!](http://learnprolognow.org/) -- Great tutorial for
+      getting started.
+* [SWI-Prolog Manual](http://www.swi-prolog.org/pldoc/doc_for?object=manual)
+      -- SWI-Prolog manual pages provide a quick reference for looking up
+      functions and parameters.
+* [StackOverflow](http://www.stackoverflow.com) -- As with anything else
+      programming related, StackOverflow is here to help.
 
