@@ -242,3 +242,7 @@ article pre.terminal code {
   margin-left: 0.5rem;
   margin-right: -1rem;
 }
+
+#disqus_thread {
+    margin-top: 5rem;
+}
