@@ -57,12 +57,13 @@ blockquote {
   padding: 0.1rem 1rem;
   padding-left: 2rem;
   margin-bottom: 2rem;
-/*  color: #808080;
-  margin: 1.5rem 0;
-  border-left: 0.4rem solid #A0A0A0; */
   border-left: 0.5rem solid #08C;
   font-size: 0.8em;
   font-style: italic;
+}
+blockquote code {
+  font-size: 1rem !important;
+  font-style: normal;
 }
 
 /*****************************************************************************/
@@ -192,9 +193,8 @@ article ul, article ol {
 }
 
 article code {
-  background-color: #cdf;
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 0 .2em;
 }
 
