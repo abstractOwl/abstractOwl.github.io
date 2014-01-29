@@ -54,10 +54,15 @@ a:hover {
 }
 
 blockquote {
-  padding: 0 1rem;
-  margin: 1rem 0;
-  color: #808080;
-  border-left: 0.4rem solid #A0A0A0;
+  padding: 0.1rem 1rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+/*  color: #808080;
+  margin: 1.5rem 0;
+  border-left: 0.4rem solid #A0A0A0; */
+  border-left: 0.5rem solid #08C;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 /*****************************************************************************/
@@ -177,9 +182,10 @@ article .date {
 
 }
 article pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0.8em .4em;
+  background-color: #cdf;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7em;
+  padding: 0.8em;
 }
 
 article ul, article ol {
@@ -187,13 +193,8 @@ article ul, article ol {
 }
 
 article code {
-  border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #cdf;
   padding: 0 .2em;
-}
-
-article pre code {
-  border: none;
 }
 
 /* terminal */
