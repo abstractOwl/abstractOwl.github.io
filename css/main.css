@@ -27,11 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #303030;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 h2 {
   margin-top: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 h3 {
@@ -112,7 +112,7 @@ main span {
 .header em {
   color: #505050;
   display: block;
-  margin-right: 6rem;
+  margin-right: 5rem;
 }
 
 .title {
