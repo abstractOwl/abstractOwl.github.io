@@ -12,7 +12,7 @@ we want more information?
 We start off by defining a simple `LOG` macro to
 alias `printf`, with a simple way to toggle messages:
 
-{% gist e512ce07925e5e38b08e simple_log.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e simple_log.h %}
 
 
 ## Adding Debugging Levels
@@ -22,7 +22,7 @@ and ERROR, but you can add your own. Traditionally, loggers print messages
 from the lowest defined level on up. We can implement this system simply
 by adding a few lines:
 
-{% gist e512ce07925e5e38b08e tiered_log.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e tiered_log.h %}
 
 
 Using constants and conditionals, we can construct a more robust tiered logging 
@@ -50,7 +50,7 @@ The C preprocessor conveniently provides the `__FILE__`, `__LINE__`, and
 `__func__` macros to help with this dilemma. We can easily insert this into
 the previous iteration with an extra macro `WHERE`:
 
-{% gist e512ce07925e5e38b08e logc.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e logc.h %}
 
 (Props to StackOverflow for help on  preprocessor variables[^2] and concatenating
  macros[^3]).
