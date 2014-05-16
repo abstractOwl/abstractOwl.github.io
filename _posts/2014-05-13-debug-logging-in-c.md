@@ -60,7 +60,7 @@ Shortly following it in `printf` is `## args`. **Note that this is a GCC
 extension and may not work in all compilers**. Consider the case where we run
 `LOG("Hello World")` with `LOG` from the first iteration. Because the varargs
 are empty, we would essentially be writing `printf("Hello World", )`, causing
-a syntax error. You can read more on this in the official GCC documentation[1].
+a syntax error. You can read more on this in the official GCC documentation[^1].
 
 
 ## Printing Source Code Metadata
@@ -70,7 +70,7 @@ are coming from. Of course, there's always wading through `grep` or one of its
 self-proclaimed successors ([Ack](http://beyondgrep.com) or
 [Ag](http://betterthanack.com)), but there has to be an easier way.
 
-The C preprocessor conveniently provides the `__FILE__`, __LINE__`, and
+The C preprocessor conveniently provides the `__FILE__`, `__LINE__`, and
 `__func__` macros to help with this dilemma. We can easily insert this into
 the previous iteration with an extra macro `WHERE`:
 
@@ -99,8 +99,8 @@ the previous iteration with an extra macro `WHERE`:
         #endif
     #endif
 
-(Props to StackOverflow for help on  preprocessor variables[2] and concatenating
- macros[3]).
+(Props to StackOverflow for help on  preprocessor variables[^2] and concatenating
+ macros[^3]).
 
 
 ## Result
@@ -111,6 +111,6 @@ and triaging bugs. You can grab the final code in Gist form [here]().
 
 ## References
 
-[1]: https://gcc.gnu.org/onlinedocs/cpp/Variadic-Macros.html
-[2]: https://stackoverflow.com/questions/1644868/c-define-macro-for-debug-printing/
-[3]: https://stackoverflow.com/questions/19343205/c-concatenating-file-and-line-macros
+[^1]: https://gcc.gnu.org/onlinedocs/cpp/Variadic-Macros.html
+[^2]: https://stackoverflow.com/questions/1644868/c-define-macro-for-debug-printing/
+[^3]: https://stackoverflow.com/questions/19343205/c-concatenating-file-and-line-macros
