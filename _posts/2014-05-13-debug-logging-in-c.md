@@ -106,11 +106,14 @@ the previous iteration with an extra macro `WHERE`:
 ## Result
 
 Simple, effective logging is crucial, especially when building complex systems
-and triaging bugs. You can grab the final code in Gist form [here]().
+and triaging bugs. You can grab the final code in Gist form
+[here](https://gist.github.com/abstractOwl/e512ce07925e5e38b08e).
+
+Questions or suggestions? Start a discussion in the comments below!
 
 
 ## References
 
-[^1]: https://gcc.gnu.org/onlinedocs/cpp/Variadic-Macros.html
-[^2]: https://stackoverflow.com/questions/1644868/c-define-macro-for-debug-printing/
-[^3]: https://stackoverflow.com/questions/19343205/c-concatenating-file-and-line-macros
+[^1]: [https://gcc.gnu.org/onlinedocs/cpp/Variadic-Macros.html](https://gcc.gnu.org/onlinedocs/cpp/Variadic-Macros.html)
+[^2]: [https://stackoverflow.com/questions/1644868/c-define-macro-for-debug-printing/](https://stackoverflow.com/questions/1644868/c-define-macro-for-debug-printing/)
+[^3]: [https://stackoverflow.com/questions/19343205/c-concatenating-file-and-line-macros](https://stackoverflow.com/questions/19343205/c-concatenating-file-and-line-macros)
