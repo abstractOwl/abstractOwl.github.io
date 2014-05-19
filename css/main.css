@@ -165,18 +165,18 @@ footer {
 article {
   margin: 6rem 0;
 }
-article h1 a, article h1 a:visited {
+article h2 a, article h2 a:visited {
   color: #303030;
   font-size: 2.5;
   font-weight: 400;
 }
-article h1 a:before {
+article h2 a:before {
   content: '\2605';
   margin-left: -2.5rem;
   margin-right: 0.5rem;
   color: #FC0;
 }
-article h1 a:hover {
+article h2 a:hover {
   color: #08C;
   text-decoration: none;
 }
