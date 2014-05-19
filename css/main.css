@@ -168,7 +168,7 @@ article {
 article h2 a, article h2 a:visited {
   color: #303030;
   font-size: 2.5;
-  font-weight: 400;
+  font-weight: normal;
 }
 article h2 a:before {
   content: '\2605';

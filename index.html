@@ -5,9 +5,9 @@ layout: default
 <main>
   {% for post in paginator.posts %}
     <article>
-      <h1>
+      <h2>
         <a href="{{ post.url }}">{{ post.title }}</a>
-      </h1>
+      </h2>
 
       <h3 class="date">Posted on {{ post.date | date_to_string }}</h3>
 
