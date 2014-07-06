@@ -12,7 +12,7 @@ we want more information?
 We start off by defining a simple `LOG` macro to essentially alias `printf`,
 with a simple way to toggle messages:
 
-{% gist abstractOwl/e512ce07925e5e38b08e simple_log.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e simple_log.c %}
 
 
 ## Adding Debugging Levels
@@ -22,7 +22,7 @@ messages from the lowest defined level on up. Here we'll use `NONE`, `INFO`,
 and `ERROR`, but you can add your own. This system can be implemented by simply
 adding a few lines:
 
-{% gist abstractOwl/e512ce07925e5e38b08e tiered_log.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e tiered_log.c %}
 
 
 Using preprocessor constants and conditionals, we can construct a more robust
@@ -51,7 +51,7 @@ The C preprocessor conveniently provides the `__FILE__`, `__LINE__`, and
 `__func__` macros to help with this dilemma. These macros can be put to quick
 use by factoring logging logic into a separate `LOG` macro:
 
-{% gist abstractOwl/e512ce07925e5e38b08e logc.h %}
+{% gist abstractOwl/e512ce07925e5e38b08e logc.c %}
 
 (Props to StackOverflow for help on  preprocessor variables[^2]).
 
