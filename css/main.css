@@ -12,13 +12,14 @@
 
 body {
   background-color: #FFF;
-  border-top: 15px solid #08C;
+  border-top: 15px solid #333;
   color: #303030;
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   padding-bottom: 3rem;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,12 +47,12 @@ h4, h5, h6 {
 p { margin: 1em 0; }
 
 a, a:visited {
-  color: #08C;
+  color: #888;
   text-decoration: none;
+  transition: all 0.6s ease-out;
 }
 a:hover {
-  color: #303030;
-  text-decoration: underline;
+  color: #111;
 }
 
 blockquote {
@@ -94,7 +95,6 @@ main span {
 
 .site {
   font-size: 115%;
-  text-align: left;
   width: 40em;
   margin: 3em auto 2em;
   line-height: 1.5em;
@@ -119,7 +119,7 @@ main span {
   margin-bottom: 2em;
 }
 .title span {
-  color: #08C;
+  color: #555;
   margin-left: -0.5rem;
 }
 .header a, .header em {
@@ -143,7 +143,7 @@ main span {
 }
 
 .header a.extra:hover {
-  color: #08C;
+  color: #555;
 }
 
 .meta {
@@ -151,8 +151,10 @@ main span {
 }
 
 footer {
-  color: #808080;
-  font-size: 1rem;
+  color: #333;
+  font-size: 115%;
+  margin: auto;
+  width: 40em;
 }
 
 /*****************************************************************************/
@@ -163,21 +165,22 @@ footer {
 
 /* standard */
 article {
-  margin: 6rem 0;
+  margin: 4rem 0;
 }
 article h2 a, article h2 a:visited {
-  color: #303030;
+  color: #333;
   font-size: 2.5;
   font-weight: normal;
+  transition: all 0.6s ease-out;
 }
 article h2 a:before {
-  content: '\2605';
+  content: '\2615';
   margin-left: -2.5rem;
   margin-right: 0.5rem;
-  color: #FC0;
+  color: #555;
 }
 article h2 a:hover {
-  color: #08C;
+    color: #888;
   text-decoration: none;
 }
 article .date {
@@ -185,12 +188,13 @@ article .date {
   display: block;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 1rem;
 
 }
 article pre {
-  background-color: #def;
+  background-color: #1f1f1f;
+  color: #FFF;
   font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
   padding: 0.8em;
 }
@@ -226,14 +230,15 @@ article pre.terminal code {
   font-style: italic;
   color: #FFF;
   display: block;
-  background: #303030;
-  padding: 1rem 2rem;;
+  background: #333;
+  padding: 2rem 3rem;;
   position: fixed;
   text-decoration: none;
   top: 50%;
+  transition: all 0.6s ease-out;
 }
 .pagination .older:hover, .pagination .newer:hover {
-  background: #08C;
+  background: #555;
 }
 .pagination .older {
   left: 0;
