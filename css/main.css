@@ -23,7 +23,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 
 h1 {
@@ -213,7 +214,7 @@ article code {
 article pre.terminal {
   border: 1px solid #000;
   background-color: #333;
-  color: #FFF;
+  color: #CCC;
 }
 
 article pre.terminal code {
@@ -231,7 +232,7 @@ article pre.terminal code {
   color: #FFF;
   display: block;
   background: #333;
-  padding: 2rem 3rem;;
+  padding: 2rem 3rem;
   position: fixed;
   text-decoration: none;
   top: 50%;
