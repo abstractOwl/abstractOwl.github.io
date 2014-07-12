@@ -217,4 +217,4 @@ from business logic, resulting in cleaner code.
 
 ## Footnotes
 
-[^1]: Yes, I know. Javascript has "prototypes", not "classes".
+[^1]: *Technically*, Javascript has "prototypes", not "classes".
