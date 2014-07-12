@@ -190,8 +190,8 @@ codebases may choose to split the aspects into a separate file.
 Aspect-Oriented Programming can be useful for refactoring applications. In
 addition to the types of advice discussed, AOP libraries also provide:
 
-`after` advice          | Run after function call, regardless of success.
-`afterReturning` advice | Run after successful function call.
+* `after` advice: Run after function call, regardless of success.
+* `afterReturning` advice: Run after successful function call.
 
 In the writing of this tutorial, I chose to use Javascript due to its
 popularity and convenience, but AOP is available in many other languages.
@@ -210,7 +210,7 @@ from business logic, resulting in cleaner code.
 
 1. [meld on Github](https://github.com/cujojs/meld)
 
-2. [AOP on Wikipedia](https://en.wikipedia.org/wiki/Aspect-oriented_programming):
+2. [AOP on Wikipedia](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
 
 3. [Every time you use CSS, you’re doing Aspect-Oriented Programming](http://plpatterns.com/post/482063133/every-time-you-use-css-youre-doing-aspect-oriented)
 
