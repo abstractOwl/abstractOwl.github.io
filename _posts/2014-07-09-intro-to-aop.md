@@ -3,18 +3,6 @@ layout: post
 title:  "Intro to Aspect-Oriented Programming"
 ---
 
-<style>
-    table {
-        border-collapse: collapse;
-        margin: 2.5rem auto;
-    }
-    td, th {
-        border: 1px solid #888;
-        padding: 0.5rem 2rem;
-    }
-</style>
-
-
 In any non-trivial application, functions quickly become weighed down with
 supporting functionality like logging,
 [tracing](https://en.wikipedia.org/wiki/Tracing_(software)), and metrics
