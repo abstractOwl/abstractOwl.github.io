@@ -45,7 +45,7 @@ few of the variables in this example. Note that variables can be more than one
 letter, like `Dog`.
 
 Functions in the language are known as *predicates*; they take one or more
-parameters and return a boolean value. In the above example, 
+parameters and return a boolean value.
 
 In the above example, `father`, `mother`, and `siblings` are obviously
 predicates. But notice `man`, `woman`, and `parent`. These *are also*
