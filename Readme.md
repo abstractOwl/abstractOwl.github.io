@@ -16,5 +16,9 @@ The "_posts/" and "_images" directories and their contents are licensed under a
 
 Everything else is licensed under the [BSD license](LICENSE).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+<br />
+
+---
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
