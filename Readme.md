@@ -1,7 +1,7 @@
+![](_images/front.jpg)
+
 # GitHub Blog
 See it [live](https://abstractOwl.github.io)!
-
-![](_images/front.jpg)
 
 ## Feedback
 
