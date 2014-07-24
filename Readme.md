@@ -1,4 +1,4 @@
-![](_images/front.jpg)
+![](https://raw.githubusercontent.com/abstractOwl/abstractOwl.github.io/master/_images/front.jpg)
 
 # GitHub Blog
 See it [live](https://abstractOwl.github.io)!
