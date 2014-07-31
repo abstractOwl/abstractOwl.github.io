@@ -257,6 +257,12 @@ article pre.terminal code {
   margin-left: 0.5rem;
   margin-right: -1rem;
 }
+@media only screen and (max-width: 768px) {
+  .pagination .older, .pagination .newer {
+    bottom: 0;
+    top: auto;
+  }
+}
 
 #disqus_thread {
     margin-top: 5rem;
