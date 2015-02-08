@@ -3,3 +3,5 @@ _site
 *.swo
 Gemfile
 Gemfile.lock
+_posts/Makefile
+_posts/*.pdf
