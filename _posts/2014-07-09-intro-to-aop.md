@@ -3,12 +3,6 @@ layout: post
 title:  "Intro to Aspect-Oriented Programming"
 ---
 
-**UPDATE**: The kind folks at [POSTD](http://www.postd.cc) have translated
-this post into Japanese! You can find it
-[here](http://postd.cc/intro-to-aop/).
-
----
-
 In any non-trivial application, functions quickly become weighed down with
 supporting functionality like logging,
 [tracing](https://en.wikipedia.org/wiki/Tracing_(software)), and metrics
@@ -198,6 +192,15 @@ repository on GitHub for those interested.
 
 Aspect-Oriented Programming provides powerful techniques to decouple concerns
 from business logic, resulting in cleaner code.
+
+
+---
+
+**UPDATE**: The kind folks at [POSTD](http://www.postd.cc) have translated
+this post into Japanese! You can find it
+[here](http://postd.cc/intro-to-aop/).
+
+---
 
 
 ## Further Reading
