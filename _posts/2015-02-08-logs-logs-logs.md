@@ -86,7 +86,7 @@ of fields:
 >   <dd>from first to M'th (included) byte, character or field</dd>
 > </dl>
 
-Likewise, using `-f -` selects all fields.
+You can also use `-f -` (range omitting N and M) to select all fields.
 
 ### Examples
 **Print the first 3 fields of a CSV line.**
