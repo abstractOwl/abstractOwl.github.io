@@ -74,11 +74,17 @@ flag then specifies which delimited field(s) to print. The
 [manpage](http://linux.die.net/man/1/cut) details how to select a range
 of fields:
 
-> Each range is one of:
-> N        N'th byte, character or field, counted from 1
-> N-       from N'th byte, character or field, to end of line
-> N-M      from N'th to M'th (included) byte, character or field
-> -M       from first to M'th (included) byte, character or field
+> Each range is one of:<br />
+> <dl>
+>   <dt>N</dt>
+>   <dd>N'th byte, character or field, counted from 1</dd>
+>   <dt>N-</dt>
+>   <dd>from N'th byte, character or field, to end of line</dd>
+>   <dt>N-M</dt>
+>   <dd>from N'th to M'th (included) byte, character or field</dd>
+>   <dt>-M</dt>
+>   <dd>from first to M'th (included) byte, character or field</dd>
+> </dl>
 
 Likewise, using `-f -` selects all fields.
 
