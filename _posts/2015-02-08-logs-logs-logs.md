@@ -11,19 +11,21 @@ from each file, or even open them in certain text editors (\*ahem\*
 **Notepad**). So how do we work with these files?
 
 # Unix Command-Line Utilities
-Unix command line utilities are known for (1) their composability and
-(2) doing one thing and doing it well. Below are a few of the most
-useful tools for text processing.
+Unix command-line utilities are known for (1) **their composability** and
+(2) **doing one thing and doing it well**. Below are a few of the most
+useful command-line tools for text processing.
 
 ## cat
 **Manpage**: <http://linux.die.net/man/1/cat>
 
-cat is one of the simplest Unix utilities. It con**cat**enates the
+`cat` is one of the simplest Unix utilities. It con**cat**enates the
 contents of the filename parameters and prints the result to stdout.
-Alternatively, if there are no parameters, it echos all input until EOF
-to stdout. cat is most often used to put the contents of a file into a
-pipe to be read by another program, but can also be handy for forcing
-weird programs like `man` to output to stdout in a jiffy.
+Alternatively, if there are no parameters, it echos all input to stdout
+until it encounters `EOF`.
+
+`cat` is most often used to put the contents of a
+file into a pipe to be read by another program, but can also be handy for
+forcing weird programs like `man` to output to stdout in a jiffy.
 
 ### Examples
 **Printing from stdin.**
@@ -131,8 +133,9 @@ search parameters.
 
 True to its name, `sort` sorts lines from stdin or a file. It's important
 to note that, by default, `sort` sorts character by character from the
-beginning on the string. This can be problematic when sorting numbers.
-Luckily, `sort` comes with the `-n` flag which sorts numbers.
+beginning on the string. This can be problematic when sorting numbers, where
+55 would come before 60 but after 100. Luckily, `sort` comes with the `-n`
+flag which sorts strings by their value.
 
 ### Examples
 **Sorting without -n flag.**
@@ -185,9 +188,10 @@ wheel when you can just as easily pipe together command-line tools and make
 your life much, much easier.
 
 ## Ruby
-Ruby is my scripting language of choice when it comes to text
-manipulation, simply because it is most familiar to me. Here's how to
-leverage ruby one-liners to do your bidding.
+Ruby is a popular scripting language frequently used in conjunction with the
+web framework Rails. However, ruby is also a powerful language in it's own
+right. Here's how to leverage ruby's expressive one-liners to do your
+bidding.
 
 ### One-liners
 Like perl, ruby has an `-e` switch which executes the specified argument
@@ -209,18 +213,18 @@ For a file `file.txt` containing:
     pears,2.50,5
     pineapples,3.00,4
 
-Say we didn't know the above command-line tools and we wanted to list
-the prices of fruit in file.txt. We would do:
+We can calculate the average price of all items with the following
+one-liner:
 
-    $ cat file.txt | ruby -ne 'puts $_.split(",")[1]'
-    price
-    1.50
-    0.50
-    1.00
-    2.50
-    3.00
+    $ cat file.txt | ruby -ne 'BEGIN { count = 0; price = 0 }; _, p, c = $_.split(","); count += c.to_i; price += p.to_f; END { puts price / count; };'
+    0.25757575757575757
+
+Thus, the average price of all items in the file is about $0.26.
 
 
 # Further Reading
-* Online manpages: <http://linux.die.net/>
-* Great awk tutorial: <http://ferd.ca/awk-in-20-minutes.html>
+* The manpages linked to in this post are available on Unix-based systems
+  through `man command`, as well as online at <http://linux.die.net/>.
+* [A comprehensive guide to bash scripting](http://www.tldp.org/LDP/abs/html/).
+* awk is another powerful text processing tool. @mononcqc has written a
+  great tutorial on it [here](http://ferd.ca/awk-in-20-minutes.html).
