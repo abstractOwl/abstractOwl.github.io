@@ -48,7 +48,7 @@ Most programmers are more familar with Perl Compatible Regular Expressions
 the `-P` parameter.
 
 Other commonly used switches include `-o`, which prints only the text that
-matches your regex; -c`, which prints the number of matches; and `-v`,
+matches your regex; `-c`, which prints the number of matches; and `-v`,
 which inverts your search (only prints lines that don't match).
 
 ### Examples
@@ -75,11 +75,10 @@ flag then specifies which delimited field(s) to print. The
 of fields:
 
 > Each range is one of:
->
-> N 	N'th byte, character or field, counted from 1
-> N-	from N'th byte, character or field, to end of line
-> N-M	from N'th to M'th (included) byte, character or field
-> -M	from first to M'th (included) byte, character or field
+> N        N'th byte, character or field, counted from 1
+> N-       from N'th byte, character or field, to end of line
+> N-M      from N'th to M'th (included) byte, character or field
+> -M       from first to M'th (included) byte, character or field
 
 Likewise, using `-f -` selects all fields.
 
