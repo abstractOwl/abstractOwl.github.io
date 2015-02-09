@@ -26,12 +26,12 @@ pipe to be read by another program, but can also be handy for forcing
 weird programs like `man` to output to stdout in a jiffy.
 
 ### Examples
-Printing from stdin.
+**Printing from stdin.**
 
     $ echo "Hello world!" | cat
     Hello world!
 
-Count the lines in test.txt.
+**Count the lines in test.txt.**
 
     $ cat test.txt | wc -l
     3
@@ -52,13 +52,13 @@ matches your regex; -c`, which prints the number of matches; and `-v`,
 which inverts your search (only prints lines that don't match).
 
 ### Examples
-List matches of regex.
+**List matches of regex.**
 
     $ echo "The cat in the hat" | grep -o at
     at
     at
 
-Invert search.
+**Invert your search.**
 
     $ echo "Hello world" > file.txt
     $ echo "Foo bar" >> file.txt
@@ -84,17 +84,17 @@ of fields:
 Likewise, using `-f -` selects all fields.
 
 ### Examples
-Print the first 3 fields of a CSV line.
+**Print the first 3 fields of a CSV line.**
 
     $ echo "eggs,bananas,oranges,pears" | cut -d',' -f1-3
     eggs,bananas,pears
 
-Print from character 22 to the end.
+**Print from character 22 to the end.**
 
     $ echo "eggs,bananas,oranges,pears" | cut -c22- 
     pears
 
-Convert a CSV line to TSV.
+**Convert a CSV line to TSV.**
 
 **Note**: You can insert tab into the commandline with &lt;CTRL&gt; v +
 &lt;TAB&gt;
@@ -112,12 +112,12 @@ commands (like those discussed in this section) on files matching the
 search parameters.
 
 ### Examples
-Search files in current directory for filenames beginning with string
-"bacon".
+**Search files in current directory for filenames beginning with string
+"bacon".**
 
     $ find . -name "bacon*"
 
-List contents of all directories in the current directory.
+**List contents of all directories in the current directory.**
 
     $ find . -type d -exec ls {} \;
 
@@ -130,14 +130,14 @@ beginning on the string. This can be problematic when sorting numbers.
 Luckily, `sort` comes with the `-n` flag which sorts numbers.
 
 ### Examples
-Sorting without -n flag.
+**Sorting without -n flag.**
 
     $ echo -e "123\n34\n678" | sort
     123
     34
     678
 
-Sorting with the `-n` flag.
+**Sorting with the `-n` flag.**
 
     $ echo -e "123\n34\n678" | sort -n
     34
@@ -157,7 +157,7 @@ It's especially important to keep in mind that uniq de-dupes
 usually piped through `sort` before `uniq`.
 
 ### Example
-De-duping a list of fruits.
+**De-duping a list of fruits.**
 
     $ echo -e "apples\noranges\npears\napples\noranges\nbananas" | sort | uniq
     apples
@@ -165,21 +165,19 @@ De-duping a list of fruits.
     oranges
     pears
 
-Printing only strings that are duplicated.
+**Printing only strings that are duplicated.**
 
     $ echo -e "apples\noranges\npears\napples\noranges\nbananas" | sort | uniq -d
     apples
     oranges
 
 # Scripting Languages
-For more complex work, scripting languages shine. Popular scripting
-languages for text processing include awk, ruby, perl, and python. While
-scripting languages are powerful, don't forget that you can compose
-one-liners with command-line tools to avoid reinventing the wheel, and
-to make your life much, much easier.
-
-## Awk
-Great awk tutorial: <http://ferd.ca/awk-in-20-minutes.html>
+For doing more complex work, scripting languages shine. Popular scripting
+languages for text processing include awk, ruby, perl, and python. These
+languages can be helpful for doing more powerful data transformations and
+aggregations.  It's just as important, however, to avoid reinventing the
+wheel when you can just as easily pipe together command-line tools and make
+your life much, much easier.
 
 ## Ruby
 Ruby is my scripting language of choice when it comes to text
@@ -218,3 +216,6 @@ the prices of fruit in file.txt. We would do:
     3.00
 
 
+# Further Reading
+* Online manpages: <http://linux.die.net/>
+* Great awk tutorial: <http://ferd.ca/awk-in-20-minutes.html>
