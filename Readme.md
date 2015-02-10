@@ -1,9 +1,9 @@
 ![](https://raw.githubusercontent.com/abstractOwl/abstractOwl.github.io/master/_images/front.jpg)
 
 # GitHub Blog
-See it [live](https://abstractOwl.github.io)!
 
-Jekyll also automatically publishes an [atom feed](/atom.xml).
+See it in action [here](https://abstractOwl.github.io)! Jekyll also
+automatically publishes an [atom feed](/atom.xml).
 
 ## Feedback
 
@@ -21,10 +21,5 @@ Everything else is licensed under the [BSD license](LICENSE).
 
 <br />
 
----
-
-[![Creative Commons License]
-(https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)]
-(http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-<br />
+(My posts are my own and do not reflect the opinions of my employer,
+ my dentist, or Hugh Jackman).
