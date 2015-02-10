@@ -42,6 +42,7 @@ Count the lines in test.txt.
     $ cat test.txt | wc -l
     3
 
+<br />
 
 ### grep
 
@@ -75,6 +76,7 @@ Invert your search.
     $ grep -v "Hello" file.txt
     Foo bar
 
+<br />
 
 ### cut
 
@@ -120,6 +122,7 @@ Convert a CSV line to TSV.
     $ echo "eggs,bananas,oranges,pears" | cut -d',' -f - --output-delimiter='   '
     eggs    bananas oranges pears
 
+<br />
 
 ### find
 
@@ -142,6 +145,7 @@ List contents of all directories in the current directory.
 
     $ find . -type d -exec ls {} \;
 
+<br />
 
 ### sort
 
@@ -169,6 +173,7 @@ Sorting with the `-n` flag.
     123
     678
 
+<br />
 
 ### uniq
 
@@ -199,6 +204,7 @@ Printing only strings that are duplicated.
     apples
     oranges
 
+<br />
 
 ## Scripting Languages
 
@@ -245,6 +251,7 @@ one-liner:
 
 Thus, the average price of all items in the file is about $0.26.
 
+<br />
 
 ## Further Reading
 
