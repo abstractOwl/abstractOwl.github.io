@@ -41,16 +41,17 @@ forcing weird programs like `man` to output to stdout in a jiffy.
 ## grep
 **Manpage**: <http://linux.die.net/man/1/grep>
 
-grep is the bread and butter of text search. At the basic level, grep
+`grep` is the bread and butter of text search. At the basic level, `grep`
 searches file parameters or stdin line-by-line for a specified regex and
 lists the lines that match.
 
 Most programmers are more familar with Perl Compatible Regular Expressions
-(PCRE) than POSIX regex, grep's default. This mode can be enabled by using
-the `-P` parameter.
+(PCRE) than `grep`'s default POSIX regex, since the regex implementations in
+languages such as Java, Javascript, and Python are based on Perl's. To use
+in PCRE mode, run it with the `-P` flag.
 
-Other commonly used switches include `-o`, which prints only the text that
-matches your regex; `-c`, which prints the number of matches; and `-v`,
+Some commonly used `grep` params include `-o`, which prints only the text
+that matches your regex; `-c`, which prints the number of matches; and `-v`,
 which inverts your search (only prints lines that don't match).
 
 ### Examples
@@ -70,7 +71,7 @@ which inverts your search (only prints lines that don't match).
 ## cut
 **Manpage**: <http://linux.die.net/man/1/cut>
 
-cut is a great tool for working with delimited data. The default
+`cut` is a great tool for working with delimited data. The default
 delimiter is tab, but can be easily changed with the `-d` flag. The `-f`
 flag then specifies which delimited field(s) to print. The
 [manpage](http://linux.die.net/man/1/cut) details how to select a range
@@ -226,5 +227,6 @@ Thus, the average price of all items in the file is about $0.26.
 * The manpages linked to in this post are available on Unix-based systems
   through `man command`, as well as online at <http://linux.die.net/>.
 * [A comprehensive guide to bash scripting](http://www.tldp.org/LDP/abs/html/).
-* awk is another powerful text processing tool. @mononcqc has written a
-  great tutorial on it [here](http://ferd.ca/awk-in-20-minutes.html).
+* awk is another powerful text processing tool.
+  [@mononcqc](http://twitter.com/mononcqc/) has written a great tutorial on
+  it [here](http://ferd.ca/awk-in-20-minutes.html).
