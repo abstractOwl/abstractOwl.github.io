@@ -52,14 +52,14 @@ Count the lines in test.txt.
 searches file parameters or stdin line-by-line for a specified regex and
 lists the lines that match.
 
-Most programmers are more familar with Perl Compatible Regular Expressions
-(PCRE) than `grep`'s default POSIX regex, since the regex implementations in
-languages such as Java, Javascript, and Python are based on Perl's. To use
-in PCRE mode, run it with the `-P` flag.
-
-Some commonly used `grep` params include `-o`, which prints only the text
+Some commonly used `grep` flags include `-o`, which prints only the text
 that matches your regex; `-c`, which prints the number of matches; and `-v`,
 which inverts your search (only prints lines that don't match).
+
+Many programmers are more familar with Perl Compatible Regular Expressions
+(PCRE) than `grep`'s default POSIX regexs since the regex implementations
+in popular languages like Java, Javascript, and Python are based on Perl's.
+To use `grep` in PCRE mode, run it with the `-P` flag.
 
 #### Examples
 
