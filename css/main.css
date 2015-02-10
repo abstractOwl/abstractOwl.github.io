@@ -197,6 +197,7 @@ article pre {
   background-color: #1f1f1f;
   color: #FFF;
   font-family: "Ubuntu Mono", "Courier New", Courier, monospace;
+  overflow: auto;
   padding: 0.8em;
 }
 
