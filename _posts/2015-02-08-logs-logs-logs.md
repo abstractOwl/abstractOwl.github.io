@@ -32,12 +32,12 @@ forcing weird programs like `man` to output to stdout in a jiffy.
 
 #### Examples
 
-**Printing from stdin.**
+Printing from stdin.
 
     $ echo "Hello world!" | cat
     Hello world!
 
-**Count the lines in test.txt.**
+Count the lines in test.txt.
 
     $ cat test.txt | wc -l
     3
@@ -62,13 +62,13 @@ which inverts your search (only prints lines that don't match).
 
 #### Examples
 
-**List matches of regex.**
+List matches of regex.
 
     $ echo "The cat in the hat" | grep -o at
     at
     at
 
-**Invert your search.**
+Invert your search.
 
     $ echo "Hello world" > file.txt
     $ echo "Foo bar" >> file.txt
@@ -102,17 +102,17 @@ You can also use `-f -` (range omitting N and M) to select all fields.
 
 #### Examples
 
-**Print the first 3 fields of a CSV line.**
+Print the first 3 fields of a CSV line.
 
     $ echo "eggs,bananas,oranges,pears" | cut -d',' -f1-3
     eggs,bananas,pears
 
-**Print from character 22 to the end.**
+Print from character 22 to the end.
 
     $ echo "eggs,bananas,oranges,pears" | cut -c22- 
     pears
 
-**Convert a CSV line to TSV.**
+Convert a CSV line to TSV.
 
 **Note**: You can insert tab into the commandline with &lt;CTRL&gt; v +
 &lt;TAB&gt;
@@ -133,12 +133,12 @@ search parameters.
 
 #### Examples
 
-**Search files in current directory for filenames beginning with string
-"bacon".**
+Search files in current directory for filenames beginning with string
+"bacon".
 
     $ find . -name "bacon*"
 
-**List contents of all directories in the current directory.**
+List contents of all directories in the current directory.
 
     $ find . -type d -exec ls {} \;
 
@@ -155,14 +155,14 @@ flag which sorts strings by their value.
 
 #### Examples
 
-**Sorting without -n flag.**
+Sorting without -n flag.
 
     $ echo -e "123\n34\n678" | sort
     123
     34
     678
 
-**Sorting with the `-n` flag.**
+Sorting with the `-n` flag.
 
     $ echo -e "123\n34\n678" | sort -n
     34
@@ -185,7 +185,7 @@ usually piped through `sort` before `uniq`.
 
 #### Example
 
-**De-duping a list of fruits.**
+De-duping a list of fruits.
 
     $ echo -e "apples\noranges\npears\napples\noranges\nbananas" | sort | uniq
     apples
@@ -193,7 +193,7 @@ usually piped through `sort` before `uniq`.
     oranges
     pears
 
-**Printing only strings that are duplicated.**
+Printing only strings that are duplicated.
 
     $ echo -e "apples\noranges\npears\napples\noranges\nbananas" | sort | uniq -d
     apples
