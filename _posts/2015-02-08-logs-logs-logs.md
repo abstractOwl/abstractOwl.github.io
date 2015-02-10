@@ -183,7 +183,7 @@ It's especially important to keep in mind that uniq de-dupes
 **contiguous duplicate lines**.  Practically, this means that data is
 usually piped through `sort` before `uniq`.
 
-#### Example
+#### Examples
 
 De-duping a list of fruits.
 
@@ -247,6 +247,9 @@ Thus, the average price of all items in the file is about $0.26.
 
 
 ## Further Reading
+
+Here are some extra links for those intrigued and looking to improve their
+command-line fu:
 
 * The manpages linked to in this post are available on Unix-based systems
   through `man command`, as well as online at <http://linux.die.net/>.
