@@ -212,7 +212,7 @@ article code {
 }
 
 /* terminal */
-article pre.terminal {
+article pre.highlight {
   border: 1px solid #000;
   background-color: #333;
   color: #CCC;
