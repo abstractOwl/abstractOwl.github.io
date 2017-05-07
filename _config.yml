@@ -1,10 +1,9 @@
 name:     abstractOwl
 tagline:  '&lt;snip, snip, snip&gt;'
 markdown: kramdown
-pygments: true
+highlighter: rouge
 paginate: 5
 url:      http://abstractowl.github.io
 
 author:
   name:   'AbstractOwl'
-  email:  ''
